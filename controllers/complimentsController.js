@@ -19,6 +19,9 @@ var complimentsController = {
     // redirect to compliment
     res.redirect("/compliments")
   }
+  update: function(req, res){
+    res.render('compliments/edit.hbs');
+  }
   // edit action code goes here...
 
  // update action code goes here...
