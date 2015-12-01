@@ -19,10 +19,20 @@ var complimentsController = {
     // redirect to compliment
     res.redirect("/compliments")
   }
+<<<<<<< HEAD
   update: function(req, res){
     res.render('compliments/edit.hbs');
   }
   // edit action code goes here...
+=======
+
+  edit: function(req, res){
+    res.render('/compliments/edit.hbs', {
+      id: req.params.id,
+      compliment: Compliment.find([req.params.id])
+    });
+  },
+>>>>>>> Add-Edit-To-Compliments-Controller
 
  // update action code goes here...
 }
